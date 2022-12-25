@@ -14,8 +14,8 @@ const Dashboard = () => {
     gender:"",
     // dob:"",
     mobile:"",
-		password: "",
-		confirmPassword: "",
+		// password: "",
+		// confirmPassword: "",
 	});
 	const [error, setError] = useState("");
 	const navigate = useNavigate();
@@ -137,7 +137,7 @@ const validateForm = () => {
 							required
 							className={styles.input}
 						/>
-						<input
+						{/* <input
 							type="password"
 							placeholder="Password"
 							name="password"
@@ -154,7 +154,7 @@ const validateForm = () => {
 							value={data.confirmPassword}
 							required
 							className={styles.input}
-						/>
+						/> */}
             {formError && <div className={styles.error_msg}>{formError.password}</div>}
 						{error && <div className={styles.error_msg}>{error}</div>}
 						<button type="submit" className={styles.green_btn}>
